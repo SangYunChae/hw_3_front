@@ -1,0 +1,78 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url(/img/test1.jpeg);
+}
+.container .header {
+  width: 80%;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .header h1 a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container .nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.container .nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.container .nav ul li a:hover {
+  color: lightblue;
+}
+.container .hero {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: White;
+  left: 50%;
+  top: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container .hero h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.container .hero p {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2::before {
+  content: "저를 소개합니다.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 30%;
+  color: black;
+  overflow: hidden;
+  border-right: 1px solid black;
+  animation: typing 5s steps(31) infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
